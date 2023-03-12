@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/chatgptasa/static/css/main.cd0555b0.css",
+    "main.js": "/chatgptasa/static/js/main.67ced3ca.js",
+    "index.html": "/chatgptasa/index.html",
+    "main.cd0555b0.css.map": "/chatgptasa/static/css/main.cd0555b0.css.map",
+    "main.67ced3ca.js.map": "/chatgptasa/static/js/main.67ced3ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd0555b0.css",
+    "static/js/main.67ced3ca.js"
+  ]
+}
