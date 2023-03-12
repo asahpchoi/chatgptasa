@@ -1,0 +1,6 @@
+.main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: "#eeeeee";
+  padding: 10px;
+}
