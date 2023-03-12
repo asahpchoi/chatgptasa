@@ -1,4 +1,3 @@
-import "./styles.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { ChatFeed, Message } from "react-chat-ui";
@@ -14,6 +13,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import SendIcon from "@mui/icons-material/Send";
 import ButtonGroup from "@mui/material/ButtonGroup";
+import "./styles.css";
 
 export default function App() {
   const [messages, setMessages] = useState([]);
