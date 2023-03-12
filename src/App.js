@@ -23,7 +23,7 @@ export default function App() {
   const [lastMessage, setLastMessage] = useState("");
 
   var profile = {
-    id: ""
+    id: "",
   };
   useEffect(() => {
     profile.id = Math.random();
@@ -35,14 +35,14 @@ export default function App() {
     messages.push(
       new Message({
         id: 1,
-        message
+        message,
       })
     );
     setIsTyping(true);
 
     var data = JSON.stringify({
       question: message,
-      userid: profile.id
+      userid: profile.id,
     });
 
     var config = {
@@ -50,9 +50,9 @@ export default function App() {
       maxBodyLength: Infinity,
       url: "https://wiry-encouraging-hoodie.glitch.me/chat",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      data: data
+      data: data,
     };
 
     axios(config)
@@ -61,7 +61,7 @@ export default function App() {
         messages.push(
           new Message({
             id: 0,
-            message: answer
+            message: answer,
           })
         );
         setLastMessage(answer);
@@ -138,12 +138,12 @@ export default function App() {
         <Card>
           <CardContent
             id="card"
-            style={{ minWidth: 275, height: "60vh", "overflow-y": "auto" }}
+            style={{ minWidth: 275, height: "60vh", overflowy: "auto" }}
             onClick={() => {
               navigator.share({
                 title: "share",
                 text: lastMessage,
-                url: "https://73otgx.csb.app/"
+                url: "https://73otgx.csb.app/",
               });
             }}
           >
@@ -157,11 +157,11 @@ export default function App() {
               bubbleStyles={{
                 chatbubble: {
                   borderRadius: 5,
-                  padding: 10
+                  padding: 10,
                 },
                 text: {
-                  fontFamily: "Verdana"
-                }
+                  fontFamily: "Verdana",
+                },
               }}
             />
           </CardContent>
